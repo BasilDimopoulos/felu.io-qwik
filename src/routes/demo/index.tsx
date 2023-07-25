@@ -26,14 +26,14 @@ export default component$(() => {
         <div class="w-full pr-16">
           <h4 class="font-anton mb-3 text-2xl text-white">{demo.chapter}</h4>
           <h3 class="font-anton uppercase text-5xl text-white">{demo.title}</h3>
-          {paragraphs[activePage.value].map((paragraph, pKey) => (
+          {paragraphs[activePage.value].map((paragraph: any, pKey) => (
             <p class="mt-5 text-xl text-[#e5e6eb]" key={pKey}>
               {paragraph}
             </p>
           ))}
         </div>
         <div class="w-full h-full pr-16">
-          {paragraphs[activePage.value + 1].map((paragraph, pKey) => (
+          {paragraphs[activePage.value + 1].map((paragraph: any, pKey) => (
             <p class="text-xl mt-5 text-[#e5e6eb]" key={pKey}>
               {paragraph}
             </p>
