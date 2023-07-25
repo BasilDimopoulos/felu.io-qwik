@@ -1,0 +1,9 @@
+@keyframes sway1 {
+    0%, 100%{ transform: rotate(-1deg);}
+    50%{ transform: rotate(1deg); }
+  }
+
+  .animate_area {
+    animation: sway1 16s infinite;
+    /* transform-origin: 90% 100% 0; */
+  }
