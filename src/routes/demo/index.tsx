@@ -3,12 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import demo from "./demo.json";
 
 export default component$(() => {
-  const paragraphs = [];
-  const p1: String[] = demo.page1.split("<br>");
-  const p2: String[] = demo.page2.split("<br>");
-  const p3: String[] = demo.page3.split("<br>");
-  const p4: String[] = demo.page4.split("<br>");
-  paragraphs.push(p1, p2, p3, p4);
+  const paragraphs = demo.xl.pages;
   const activePage = useSignal(0);
 
   return (
@@ -24,16 +19,18 @@ export default component$(() => {
 
       <div class="flex justify-center gap-x-8 pt-24 h-full">
         <div class="w-full pr-16">
-          <h4 class="font-anton mb-3 text-2xl text-white">{demo.chapter}</h4>
-          <h3 class="font-anton uppercase text-5xl text-white">{demo.title}</h3>
-          {paragraphs[activePage.value].map((paragraph: any, pKey) => (
+          {activePage.value == 0 ? <div>
+            <h4 class="font-anton mb-3 text-2xl text-white">{demo.chapter}</h4>
+            <h3 class="font-anton uppercase text-5xl text-white">{demo.title}</h3>
+          </div> : <></>}
+          {paragraphs[activePage.value].split("<br>").map((paragraph: any, pKey) => (
             <p class="mt-5 text-xl text-[#e5e6eb]" key={pKey}>
               {paragraph}
             </p>
           ))}
         </div>
         <div class="w-full h-full pr-16">
-          {paragraphs[activePage.value + 1].map((paragraph: any, pKey) => (
+          {paragraphs[activePage.value + 1].split("<br>").map((paragraph: any, pKey) => (
             <p class="text-xl mt-5 text-[#e5e6eb]" key={pKey}>
               {paragraph}
             </p>
