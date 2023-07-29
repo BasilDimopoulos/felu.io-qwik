@@ -9,19 +9,19 @@ export default component$(() => {
         src="/assets/images/felu_wave.json"
         background="transparent"
         speed="1"
-        class="h-screen absolute rotate-90 left-80 z-10"
+        class="h-screen absolute rotate-90 lg:left-80 left-52 z-10"
         loop
         autoplay
       ></lottie-player>
-      <div class="w-full flex h-screen bg-[#010715]">
-        <div class="w-full flex flex-col align-middle justify-center pt-16">
-          <h1 class="text-8xl font-anton font-bold text-[#EDE9B9] uppercase text-center mb-3 z-20 tracking-[0.15rem]">
+      <div class="w-full flex h-screen bg-[#010715] relative">
+        <div class="w-full flex flex-col align-middle justify-center pt-16 pl-16 xl:pl-0 z-20">
+          <h1 class="xl:text-8xl text-6xl text-left xl:text-center font-anton font-bold text-[#EDE9B9] uppercase mb-3 z-20 tracking-[0.15rem]">
             Join Our Journey
           </h1>
-          <p class="text-xl text-white text-center mb-5">
+          <p class="xl:text-xl text-lg text-white text-left xl:text-center mb-5">
             Meet Felu. Your new go to story time for the modern day storyteller
           </p>
-          <div class="w-full flex justify-center items-center gap-3">
+          <div class="w-full flex xl:justify-center gap-3">
             <a href="/demo">
               <button
                 type="button"
