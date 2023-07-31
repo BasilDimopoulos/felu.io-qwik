@@ -9,19 +9,19 @@ export default component$(() => {
         src="/assets/images/felu_wave.json"
         background="transparent"
         speed="1"
-        class="h-screen absolute rotate-90 lg:left-80 left-52 z-10"
+        class="absolute h-screen lg:rotate-90 rotate-180 2xl:left-80 lg:left-40 left-0 z-10 top-16 lg:top-0"
         loop
         autoplay
       ></lottie-player>
-      <div class="w-full flex h-screen bg-[#010715] relative">
-        <div class="w-full flex flex-col align-middle justify-center pt-16 pl-16 xl:pl-0 z-20">
-          <h1 class="xl:text-8xl text-6xl text-left xl:text-center font-anton font-bold text-[#EDE9B9] uppercase mb-3 z-20 tracking-[0.15rem]">
+      <div class="w-full lg:flex lg:h-screen bg-[#010715] relative">
+        <div class="w-full flex flex-col align-middle justify-center pt-44 lg:pt-16 pl-16 2xl:pl-0 pb-12 lg:pb-0 z-20">
+          <h1 class="2xl:text-8xl text-6xl text-left 2xl:text-center font-anton font-bold text-[#EDE9B9] uppercase mb-3 z-20 tracking-[0.15rem]">
             Join Our Journey
           </h1>
-          <p class="xl:text-xl text-lg text-white text-left xl:text-center mb-5">
+          <p class="2xl:text-xl text-lg text-white text-left 2xl:text-center mb-5 z-20">
             Meet Felu. Your new go to story time for the modern day storyteller
           </p>
-          <div class="w-full flex xl:justify-center gap-3">
+          <div class="w-full flex 2xl:justify-center gap-3 z-20">
             <a href="/demo">
               <button
                 type="button"
@@ -41,7 +41,7 @@ export default component$(() => {
         </div>
         <div
           class={[
-            "w-full bg-[url(/assets/images/dummy-landing.png)] bg-cover bg-no-repeat [background-position-x:-300px]",
+            "w-full bg-[url(/assets/images/dummy-landing.png)] bg-cover bg-no-repeat 2xl:[background-position-x:-300px] lg:[background-position-x:-500px] [background-position-x:-580px]",
             waveStyle.animate_area,
           ]}
         ></div>
