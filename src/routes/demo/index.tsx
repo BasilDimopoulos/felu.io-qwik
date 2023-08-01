@@ -7,9 +7,9 @@ export default component$(() => {
   const activePage = useSignal(0);
 
   return (
-    <div class="w-full h-screen pl-44 pr-44 pt-12 pb-20 bg-[#010715] flex flex-col justify-center">
-      <div class="flex flex-col items-center pt-10">
-        <div class="w-3/6 bg-gray-200 h-2 dark:bg-gray-700 rounded-full">
+    <div class="w-full h-screen pl-44 pr-44 pt-12 pb-16 bg-[#010715] flex flex-col justify-center">
+      <div class="flex flex-col items-center pt-14">
+        <div class="lg:w-3/6 md:5/6 w-4/6  bg-gray-200 h-2 dark:bg-gray-700 rounded-full">
           <div
             style={{ width: `${((activePage.value + 2) / 4) * 100}%` }}
             class={`bg-[#598894] h-2 rounded-full`}
@@ -17,7 +17,7 @@ export default component$(() => {
         </div>
       </div>
 
-      <div class="flex justify-center gap-x-8 pt-24 h-full">
+      <div class="w-full lg:flex justify-center gap-x-8 pt-20 h-full">
         <div class="w-full pr-16">
           {activePage.value == 0 ? <div>
             <h4 class="font-anton mb-3 text-2xl text-white">{demo.chapter}</h4>
