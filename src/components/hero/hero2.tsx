@@ -14,7 +14,7 @@ export default component$(() => {
         autoplay
       ></lottie-player>
       <div class="w-full lg:flex lg:h-screen bg-[#010715] relative">
-        <div class="w-full flex flex-col align-middle justify-center pt-44 lg:pt-16 sm:pl-16 pl-8 2xl:pl-0 pb-12 lg:pb-0 z-20">
+        <div class="w-full flex flex-col align-middle justify-center pt-32 lg:pt-16 sm:pl-16 pl-8 2xl:pl-0 pb-28 xs:pb-36 lg:pb-0 z-20">
           <h1 class="2xl:text-8xl text-6xl text-left 2xl:text-center font-anton font-bold text-[#EDE9B9] uppercase mb-3 z-20 tracking-[0.15rem]">
             Join Our Journey
           </h1>

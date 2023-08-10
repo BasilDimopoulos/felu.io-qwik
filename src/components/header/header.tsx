@@ -3,10 +3,10 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <div class="bg-transparent absolute top-6 w-full">
-      <div class = "pl-12 pt-5">
+    <div class="bg-transparent absolute md:top-6 top-6 w-full">
+      <div class = "md:pl-12 pl-6 md:pt-5">
         <a href="/">
-          <img alt="logo" src="/assets/images/felu-moon.png" class="h-16"></img>
+          <img alt="logo" src="/assets/images/felu-moon.png" class="h-16 z-50 relative"></img>
         </a>
       </div>
       {/* <div class="flex justify-center">
