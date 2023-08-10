@@ -17,7 +17,7 @@ export default component$(() => {
         </div>
       </div>
 
-      <div class="w-full lg:flex justify-center gap-x-8 pt-20 h-full">
+      <div class="w-full lg:flex justify-center xl:gap-x-8 pt-20 h-full">
         <div class="w-full pr-16">
           {activePage.value == 0 ? <div>
             <h4 class="font-anton mb-3 text-2xl text-white">{demo.chapter}</h4>
@@ -41,7 +41,7 @@ export default component$(() => {
         <div class="absolute">
           <button
             type="button"
-            onClick$={() =>{activePage.value > 0 ? activePage.value -= 1 : console.log("Hello!")}}
+            onClick$={() =>{activePage.value > 0 ? activePage.value -= 1 : null}}
             class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
           >
             <svg
@@ -63,7 +63,7 @@ export default component$(() => {
           <button
             type="button"
             class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
-            onClick$={() =>{activePage.value < 2 ? activePage.value ++ : console.log(activePage.value)}}
+            onClick$={() =>{activePage.value < 2 ? activePage.value ++ : null}}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
