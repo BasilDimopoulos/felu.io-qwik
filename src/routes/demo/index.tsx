@@ -7,7 +7,7 @@ export default component$(() => {
   const activePage = useSignal(0);
 
   return (
-    <div class="w-full h-screen pl-44 pr-44 pt-12 pb-16 bg-[#010715] flex flex-col justify-center">
+    <div class="w-full h-screen xl:pl-44 xl:pr-44 pl-20 pr-5 pt-12 pb-16 bg-[#010715] flex flex-col justify-center">
       <div class="flex flex-col items-center pt-14">
         <div class="lg:w-3/6 md:5/6 w-4/6  bg-gray-200 h-2 dark:bg-gray-700 rounded-full">
           <div
