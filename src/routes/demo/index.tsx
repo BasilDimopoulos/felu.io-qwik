@@ -8,9 +8,9 @@ export default component$(() => {
 
   return (
     <div>
-      <div class="w-full h-screen xl:pl-44 xl:pr-44 pl-12 pr-5 pt-12 pb-16 bg-[#010715] flex flex-col justify-center">
-        <div class="flex flex-col items-center lg:pt-14 pt-5">
-          <div class="lg:w-3/6 md:5/6 w-4/6  bg-gray-200 h-2 dark:bg-gray-700 rounded-full">
+      <div class="w-full h-screen xl:pl-44 xl:pr-44 pl-12 md:pr-10 pt-12 pb-16 bg-[#010715] flex flex-col justify-center">
+        <div class="flex flex-col items-center md:pt-14 pt-5">
+          <div class="lg:w-3/6 md:5/6 w-4/6  bg-gray-200 h-2 dark:bg-gray-700 rounded-full hidden lg:block">
             <div
               style={{ width: `${((activePage.value + 2) / 4) * 100}%` }}
               class={`bg-[#598894] h-2 rounded-full`}
